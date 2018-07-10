@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+  <meta charset="utf-8" />
+  <title>Exercice 4</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</head>
+<body>
+  <div ng-controller="carsCtrl">
+    <ul>
+      <li ng-repeat="x in myData |filter : '!verte'">
+        {{ x.marque + ', ' + x.couleur }}
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
