@@ -9,7 +9,7 @@
 <body>
   <div ng-controller="carsCtrl">
     <ul>
-      <li ng-repeat="x in myData |filter : '!verte'">
+      <li ng-repeat="x in myData |filter :{couleur : '!verte'}">
         {{ x.marque + ', ' + x.couleur }}
       </li>
     </ul>
